@@ -143,9 +143,9 @@ public class DisplayBuffs06 : MelonMod
         // Makes the text box bigger
         public static void ChangeBoxSize()
         {
-            nbMainProcess.GetBattleUI().transform.Find("../bannounce(Clone)/bannounce01").gameObject.transform.localScale = new Vector3(1f, 2.3f, 1f);
-            nbMainProcess.GetBattleUI().transform.Find("../bannounce(Clone)/stretch/bannounce02").gameObject.transform.localScale = new Vector3(1f, 2.3f, 1f);
-            nbMainProcess.GetBattleUI().transform.Find("../bannounce(Clone)/bannounce03").gameObject.transform.localScale = new Vector3(1f, 2.3f, 1f);
+            nbMainProcess.GetBattleUI().transform.Find("../bannounce(Clone)/bannounce01").gameObject.transform.localScale = new Vector3(1f, 2.5f, 1f);
+            nbMainProcess.GetBattleUI().transform.Find("../bannounce(Clone)/stretch/bannounce02").gameObject.transform.localScale = new Vector3(1f, 2.5f, 1f);
+            nbMainProcess.GetBattleUI().transform.Find("../bannounce(Clone)/bannounce03").gameObject.transform.localScale = new Vector3(1f, 2.5f, 1f);
         }
 
         // Reverts the box size
