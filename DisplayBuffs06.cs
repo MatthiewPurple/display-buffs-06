@@ -5,7 +5,7 @@ using display_buffs_06;
 using Il2Cppnewbattle_H;
 using UnityEngine;
 
-[assembly: MelonInfo(typeof(DisplayBuffs06), "Display buffs", "1.0.0", "Matthiew Purple")]
+[assembly: MelonInfo(typeof(DisplayBuffs06), "Display buffs", "1.0.1", "Matthiew Purple")]
 [assembly: MelonGame("アトラス", "smt3hd")]
 
 namespace display_buffs_06;
