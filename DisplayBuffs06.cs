@@ -20,13 +20,16 @@ public class DisplayBuffs06 : MelonMod
         public static void Prefix(ref string text2)
         {
             string nickname = frName.frGetCNameString(0); // Gets the player's nickname
+
+            if (nbMainProcess.nbGetUnitWorkFromFormindex(target_formindex) == null) return; // If the target died since last time, return
+
             string demonname = datDevilName.Get(nbMainProcess.nbGetUnitWorkFromFormindex(target_formindex).id); // Gets the demon's name
 
             // If displayng the name of the single target
             if ((target_formindex == 0 && text2 == nickname) || (target_formindex != 0 && text2 == demonname))
             {
                 // Gets the type with the buffs info
-                nbParty_t party_member = nbMainProcess.nbGetPartyFromFormindex(target_formindex);
+                nbParty_t party_member = nbMainProcess.nbGetPartyFromFormindex(target_formindex);               
 
                 // If there is at least one buffed applied
                 if (Utility.AtLeastOneBuff(party_member))
